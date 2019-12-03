@@ -1,0 +1,48 @@
+.slider {
+    margin: 0 auto;
+    text-align: center;
+    width: 1600px;
+
+    &__title {
+        display: inline-block;
+        color: #ffffff;
+        background-color: #000000;
+        font-family: Roboto;
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4.8px;
+        padding: 11px 45px;
+    }
+
+    &__desc {
+        color: #000000;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 7.2px;
+        padding-top: 50px;
+    }
+}
+
+.slide {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 270px 250px;
+
+    &--one {
+        background-image: url(../img/slider-1-bg.jpg);
+    }
+
+    &--two {
+        background-image: url(../img/slider-2-bg.jpg);
+    }
+}
+
+.prev {
+    content: 'kekes';
+}
