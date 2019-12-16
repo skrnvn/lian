@@ -1,11 +1,13 @@
 body {
     max-width: 1600px;
-    background-color: #fafafa;
+	background-color: #fafafa;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
 	width: 1140px;
-    margin: 0 auto;
+	margin: 0 auto;
+	overflow: hidden;
 
 	&--header {
 			display: flex;
@@ -103,12 +105,42 @@ body {
     &--gray {
         padding: 10px 24px;
         background-color: #959595;
-    }
+	}
+	
+	&--socials {
+		background-color: #707070;
+		padding: 12px 16px;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 24px;
+		text-transform: uppercase;	
+		fill: #ffffff;
+		border-radius: 3px;
+		letter-spacing: 0.7px;
+	}
 }
 
 .icon {
     width: 14px;
-    height: 14px;
+	height: 14px;
+	
+	&--button {
+		width: 12px;
+		height: 12px;
+	}
+
+	&--nav {
+		width: 12px;
+		height: 12px;
+	}
+
+	&--padding-right {
+		padding-right: 10px;
+	}
+
+	&--padding-left {
+		padding-left: 10px;
+	}
 }
 
 .socials {
@@ -116,19 +148,46 @@ body {
     justify-content: center;
 
     &__item {
-        padding: 0 25px;
+		padding: 0 25px;
+		
+		&--portfolio {
+			padding: 0 10px;
+		}
     }
 
-    &__link:hover {
-        fill: #000000;
-    }
+	&__link {
+	
+		&:hover {
+        	fill: #000000;
+		}
+		
+		&--portfolio {
+			fill: #707070;
+		}
+	}
 
     &--footer {
         fill: #777777;
         border: 1px solid #ebebeb;
         padding: 25px 0;
         margin: 40px 0;
-    }
+	}
+	
+	&--portfolio {
+		margin-left: 15px;
+		background-color: #e1e1e1;
+		align-items: center;
+		position: relative;
+
+		&::before {
+			content: '';
+			background-image: url(../img/socials-arrow.svg);
+			width: 8px;
+			height: 16px;
+			position: absolute;
+			left: -8px;
+		}
+	}
 }
 
 .copyright {
@@ -156,6 +215,14 @@ body {
 
 	&--portfolio {
 		background-image: url(../img/portfolio-heading.jpg);
+	}
+
+	&--blog {
+		background-image: url(../img/blog-heading.jpg);
+	}
+
+	&--contact {
+		background-image: url(../img/contact-heading.jpg);
 	}
 
     &__img {
@@ -203,6 +270,10 @@ body {
 		text-align: left;
 	}
 
+	&--portfolio-related {
+		margin-top: 140px;
+	}
+
 	&__title {
 		color: #000000;
 		font-family: 'Roboto';
@@ -225,5 +296,10 @@ body {
 		letter-spacing: 0.35px;
 		line-height: 30px;
 		padding-bottom: 40px;		
+	}
+
+	&__gallery {
+		display: flex;
+		justify-content: space-between;
 	}
 }
