@@ -86,6 +86,23 @@
     }
 }
 
+.portfolio-gallery {
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+
+    &__item {
+        width: 24%;
+
+        &--prewiev {
+            width: 100%;
+        }
+    }
+}
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
