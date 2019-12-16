@@ -1,0 +1,110 @@
+.blog-post {
+    width: 945px;
+    margin: 70px auto 85px;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        color: #333333;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 4.5px;
+        line-height: 30px;
+        text-transform: uppercase; 
+        margin-bottom: 15px;       
+    }
+
+    &__info {
+        width: 40%;
+        margin: 0 auto 25px;
+        color: #777777;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.35px;
+    }
+
+    &__cover {
+        width: 100%;
+    }
+
+    &__content {
+        margin: 50px auto;
+    }
+
+    &__text {
+        padding: 0 68px 35px;
+        color: #777777;
+        font-size: 14px;
+        font-weight: 400;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+        line-height: 30px;
+    }
+
+    &__quote {
+        color: #777777;
+        font-family: "PT Serif";
+        font-size: 18px;
+        font-weight: 700;
+        font-style: italic;
+        line-height: 30px;
+        padding: 38px 25px 30px;
+        border: 1px solid #0000002f; 
+        border-left-width: 4px;
+        margin-bottom: 45px;    
+    }
+
+    &__heading {
+        padding: 0 68px 35px;
+        color: #333333;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        line-height: 36px;
+        text-transform: uppercase;                
+    }
+}
+
+.blog-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments {
+    width: 810px;
+    margin: 0 auto 50px;
+
+    &__user-info {
+        width: 810px;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0 25px;
+    }
+
+    &__item {
+        box-sizing: border-box;
+        width: 250px;
+        border: 1px solid #e1e1e1;
+        background-color: #ffffff;
+        font-size: 14px;
+        font-style: italic;
+        padding: 14px;
+
+        &--name {
+            border-left-width: 3px;
+        }
+
+        &--message {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+
+    textarea::placeholder {
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        font-style: italic;
+    }
+}
