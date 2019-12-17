@@ -22,7 +22,9 @@ body {
 	}
 
 	&--blog {
-		margin-bottom: 100px;
+		margin: 70px auto 100px;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	&--blog-comment {
@@ -156,6 +158,13 @@ body {
 
 	&--padding-left {
 		padding-left: 10px;
+	}
+
+	&--blog-preview {
+		width: 12px;
+		height: 12px;
+		fill: #cccccc;
+		vertical-align: text-top;
 	}
 }
 
