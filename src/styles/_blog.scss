@@ -179,3 +179,16 @@
 .blog-sidebar {
     width: 32%;
 }
+
+.blog-search {
+    position: relative;
+
+    &__item {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: #ffffff;    
+        font-size: 16px;
+        font-style: italic;
+        padding: 24px 45px 24px 30px;   
+    }
+}
