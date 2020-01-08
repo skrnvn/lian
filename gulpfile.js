@@ -21,6 +21,7 @@ const spriteFiles = ["src/sprite/*.png"];
 const imageFiles = ["src/img/**/*"];
 const javascriptFiles = ["src/js/**/*.js"];
 
+
 function isLive() {
   return process.env.NODE_ENV === 'live';
 }

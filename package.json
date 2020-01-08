@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "scripts": {
     "build": "NODE_ENV=live gulp build",
-    "gulp": "./node_modules/.bin/gulp"
+    "gulp": "gulp",
+    "env": "env",
+    "build-local": "STATIC_URL=assets gulp build"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

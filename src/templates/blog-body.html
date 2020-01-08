@@ -1,6 +1,6 @@
 <section class="container container--blog">
     <div class="blog-preview">
-        <div class="blog-preview__col-one">
+        <div class="blog-preview__item">
             <article class="blog-post blog-post--preview">
                 <header class="blog-post__header blog-post__header--preview">
                     <span class="blog-post__tag">
@@ -92,7 +92,7 @@
                 <img class="blog-post__cover blog-post__cover--preview blog-post__cover--empty" src="./assets/img/blog-post-cover-img-2.jpg" alt="">
             </article>
         </div>
-        <div class="blog-preview__col-two">
+        <div class="blog-preview__item">
             <article class="blog-post blog-post--preview">
                 <img class="blog-post__cover blog-post__cover--preview" src="./assets/img/blog-post-cover-img-3.jpg" alt="">
                 <header class="blog-post__header blog-post__header--preview">
@@ -183,7 +183,7 @@
     <div class="blog-sidebar">
         <div class="blog-sidebar__item blog-search">
             <input class="blog-search__item" type="text" name="search-field" id="search-field" placeholder="Search">
-            <button type="submit">
+            <button class="blog-search__button" type="submit">
                 <svg class="icon icon--blog-search">
                     <use xlink:href="@@staticUrl/img/sprites/solid.svg#search"></use>
                 </svg>
@@ -196,39 +196,47 @@
             <ul class="blog-preview blog-preview--sidebar">
                 <li class="blog-post blog-post--sidebar">
                     <img class="blog-post__cover blog-post__cover--sidebar" src="./assets/img/blog-post-img-sidebar-1.jpg" alt="">
+                    <header class="blog-post__header blog-post__header--sidebar">    
                     <h2 class="blog-post__title blog-post__title--sidebar">
-                        Lorem ipsum dolor sit amet, consec
-                    </h2>
-                    <span class="blog-post__date blog-post__date--sidebar">
-                        July 5, 2016
-                    </span>
+                            Lorem ipsum dolor sit amet, consec
+                        </h2>
+                        <span class="blog-post__date blog-post__date--sidebar">
+                            July 5, 2016
+                        </span>
+                    </header>
                 </li>
                 <li class="blog-post blog-post--sidebar">
                     <img class="blog-post__cover blog-post__cover--sidebar" src="./assets/img/blog-post-img-sidebar-2.jpg" alt="">
-                    <h2 class="blog-post__title blog-post__title--sidebar">
-                        Ut wisi enim ad minim veniam, quis
-                    </h2>
-                    <span class="blog-post__date blog-post__date--sidebar">
-                        July 17, 2016
-                    </span>
+                    <header class="blog-post__header blog-post__header--sidebar">
+                        <h2 class="blog-post__title blog-post__title--sidebar">
+                            Ut wisi enim ad minim veniam, quis
+                        </h2>
+                        <span class="blog-post__date blog-post__date--sidebar">
+                            July 17, 2016
+                        </span>
+                    </header>
                 </li>
                 <li class="blog-post blog-post--sidebar">
                     <img class="blog-post__cover blog-post__cover--sidebar" src="./assets/img/blog-post-img-sidebar-3.jpg" alt="">
-                    <h2 class="blog-post__title blog-post__title--sidebar">
-                        Aliquip ex ea commodo aliquam erat volutpat
-                    </h2>
-                    <span class="blog-post__date blog-post__date--sidebar">
-                        July 21, 2016
-                    </span>
+                    <header class="blog-post__header blog-post__header--sidebar">
+                        <h2 class="blog-post__title blog-post__title--sidebar">
+                            Aliquip ex ea commodo aliquam erat volutpat
+                        </h2>
+                        <span class="blog-post__date blog-post__date--sidebar">
+                            July 21, 2016
+                        </span>
+                    </header>
                 </li>
                 <li class="blog-post blog-post--sidebar">
                     <img class="blog-post__cover blog-post__cover--sidebar" src="./assets/img/blog-post-img-sidebar-4.jpg" alt="">
-                    <h2 class="blog-post__title blog-post__title--sidebar">
-                        Ut wisi enim ad minim veniam, quis
-                    </h2>
-                    <span class="blog-post__date blog-post__date--sidebar">
-                        July 17, 2016
-                    </span>
+                    <header class="blog-post__header blog-post__header--sidebar">
+                        <h2 class="blog-post__title blog-post__title--sidebar">
+                            Ut wisi enim ad minim veniam, quis
+                        </h2>
+                        <span class="blog-post__date blog-post__date--sidebar">
+                            July 17, 2016
+                        </span>
+                    </header>
                 </li>
             </ul>
         </div>
@@ -236,61 +244,79 @@
             <h3 class="section-desc__title section-desc__title--sidebar">
                 Popular tags        
             </h3>
-            <span class="blog-post__tag blog-post__tag--small">
-                construction
-            </span>
-            <span class="blog-post__tag blog-post__tag--small">
-                engineering
-            </span>
-            <span class="blog-post__tag blog-post__tag--small">
-                architecture
-            </span>
-            <span class="blog-post__tag blog-post__tag--small">
-                structural design
-            </span>
-            <span class="blog-post__tag blog-post__tag--small">
-                civil engineer
-            </span>
-            <span class="blog-post__tag blog-post__tag--small">
-                industrial
-            </span>
-            <span class="blog-post__tag blog-post__tag--small">
-                management
-            </span>
-            <span class="blog-post__tag blog-post__tag--small">
-                mechanical
-            </span>
+            <ul class="blog-sidebar__tags">
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        construction
+                    </a>
+                </li>
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        engineering
+                    </a>
+                </li>
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        architecture
+                    </a>
+                </li>
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        structural design
+                    </a>
+                </li>
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        civil engineer
+                    </a>
+                </li>
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        industrial
+                    </a>
+                </li>
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        management
+                    </a>
+                </li>
+                <li class="blog-post__tag blog-post__tag--small">
+                    <a href="">
+                        mechanical
+                    </a>
+                </li>
+            </ul>
         </div>
         <div class="blog-sidebar__item">
             <h3 class="section-desc__title section-desc__title--sidebar">
                 Instagram
             </h3>
-            <ul class="sidebar-insta">
-                <li class="sidebar-insta__item">
+            <ul class="insta-widget">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-1.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-2.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-3.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-4.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-5.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-6.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-7.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-8.jpg" alt="">
                 </li>
-                <li class="sidebar-insta__item">
+                <li class="insta-widget__item">
                     <img src="./assets/img/blog-insta-img-9.jpg" alt="">
                 </li>
             </ul>

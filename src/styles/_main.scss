@@ -313,7 +313,6 @@ body {
 
 	&__title {
 		color: #000000;
-		font-family: 'Roboto';
 		font-size: 30px;
 		font-weight: 300;
 		letter-spacing: 12px;	
@@ -328,12 +327,31 @@ body {
 
 		&--blog-comment {
 			font-size: 20px;
-			font-weight: 300;
 			letter-spacing: 4px;			
 		}
 
 		&--sidebar {
-			
+			font-size: 18px;
+			line-height: 24px;
+			letter-spacing: 7.2px;	
+			background-color: #ebebeb;
+			padding: 14px 0 12px;		
+			text-align: center;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 12px;
+				left: 50%;
+				width: 0;
+				height: 0;
+				border: 8px solid transparent;
+				border-top-color: #ebebeb;
+				border-bottom: 0;
+				margin-left: -20px;
+				margin-bottom: -20px;				
+			}
 		}
 	}
 

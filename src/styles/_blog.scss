@@ -9,12 +9,27 @@
         background-color: #ffffff;        
     }
 
+    &--sidebar {
+        margin: 25px 25px 0;
+        width: auto;
+        display: flex;
+
+        &:last-child {
+            margin-bottom: 25px;
+        }
+    }
+
     &__header {
         text-align: center;
 
         &--preview {
             text-align: left;
             padding: 40px 35px 10px 45px;
+        }
+
+        &--sidebar {
+            text-align: left;
+            padding-left: 15px;
         }
     }
 
@@ -36,6 +51,25 @@
             text-align: left; 
             margin: 0 0 5px;      
         }
+
+        &--sidebar {
+            color: #3d3d3d;
+            font-size: 16px;
+            font-weight: 500;  
+            line-height: 1.25;
+            letter-spacing: normal;
+            text-transform: none; 
+            margin-bottom: 5px;        
+        }
+    }
+
+    &__date {
+
+        &--sidebar {
+            font-size: 13px;
+            font-weight: 300;
+            color: #777777;        
+        }
     }
 
     &__info {
@@ -49,6 +83,11 @@
 
     &__cover {
         width: 100%;
+
+        &--sidebar {
+            width: 90px;
+            height: 65px;
+        }
     }
 
     &__content {
@@ -107,7 +146,18 @@
         text-transform: uppercase; 
         padding: 8px 15px; 
         background-color: #000000;
-        margin-bottom: 25px;      
+        margin-bottom: 25px; 
+        
+        &--small {
+            color: #9c9c9c;
+            background-color: #ffffff;
+            text-transform: none;
+            font-weight: normal;
+            border: solid 1px #eeeeee;
+            padding: 10px 15px;
+            margin: 0 6px 10px 0;
+            box-sizing: border-box;
+        }
     }
 
     &__author {
@@ -174,10 +224,27 @@
 .blog-preview {
     width: 65%;
     display: flex;
+
+    &--sidebar {
+        background-color: #ffffff;
+        flex-direction: column;
+        width: auto;
+    }
 }
 
 .blog-sidebar {
     width: 32%;
+
+    &__item {
+        background-color: #ffffff;
+        margin-bottom: 27px;
+    }
+
+    &__tags {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 35px 20px 20px;
+    }
 }
 
 .blog-search {
@@ -190,5 +257,21 @@
         font-size: 16px;
         font-style: italic;
         padding: 24px 45px 24px 30px;   
+    }
+
+    &__button {
+        position: absolute;
+    }
+}
+
+.insta-widget {
+    padding: 35px 25px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        margin-bottom: 5px;
     }
 }
