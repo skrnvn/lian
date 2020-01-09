@@ -19,6 +19,10 @@
         }
     }
 
+    &--hidden {
+        position: relative;
+    }
+
     &__header {
         text-align: center;
 
@@ -61,6 +65,10 @@
             text-transform: none; 
             margin-bottom: 5px;        
         }
+
+        &--hidden {
+            color: #ffffff;
+        }
     }
 
     &__date {
@@ -97,6 +105,35 @@
             margin: 5px auto 45px;
             padding: 0 40px 0 45px;
         }
+
+        &--hidden {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 0;
+            opacity: 0;
+            transition: 0.3s ease;
+
+            &:hover {
+                opacity: 1;
+                transition: 0.3s ease;
+            }
+
+            &::before {
+                content: '';
+                background-color: #000000;
+                opacity: 0.85;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: -1;
+            }
+        }
     }
 
     &__text {
@@ -112,6 +149,10 @@
             padding: 0;
             font-weight: 400;
             line-height: 24px;            
+        }
+
+        &--hidden {
+            color: #e5e5e5;
         }
     }
 
@@ -176,6 +217,10 @@
         color: #9a9a9a;
         font-size: 13px;
         font-weight: 400;
+
+        &--hidden {
+            margin-top: -30px;
+        }
     }
 }
 
