@@ -30,6 +30,12 @@ body {
 	&--blog-comment {
 		text-align: center;
 	}
+
+	&--contacts {
+		display: flex;
+		justify-content: space-between;
+		margin: 85px auto 80px;
+	}
 }
 
 .my-dots {
@@ -311,6 +317,24 @@ body {
 		margin-top: 140px;
 	}
 
+	&--contacts {
+		text-align: left;
+		margin: 0;
+	}
+
+	&__heading {
+		padding-bottom: 35px;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 60px;
+			height: 1px;
+			background-color: #000000;
+			margin-top: 20px;
+		}
+	}
+
 	&__title {
 		color: #000000;
 		font-size: 30px;
@@ -353,6 +377,26 @@ body {
 				margin-bottom: -20px;				
 			}
 		}
+
+		&--contacts {
+			font-size: 30px;
+			letter-spacing: 12px;
+			line-height: 1.1;
+			color: #000000;	
+			padding-bottom: 20px;	
+		}
+
+		&--values {
+			padding: 25px 0;
+		}
+	}
+
+	&__subtitle {
+		font-size: 16px;
+		font-weight: 300;
+		letter-spacing: 0.4px;
+		line-height: normal;
+		color: #2f302f;		
 	}
 
 	&__text {
@@ -360,11 +404,77 @@ body {
 		font-weight: 400;
 		letter-spacing: 0.35px;
 		line-height: 30px;
-		padding-bottom: 40px;		
+		padding-bottom: 40px;	
+		
+		&--contacts {
+			padding-bottom: 20px;
+		}
+
+		&--values {
+			padding-bottom: 0;
+			color: #777777;
+		}
 	}
 
 	&__gallery {
 		display: flex;
 		justify-content: space-between;
+	}
+}
+
+.contacts-form {
+	width: 748px;
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: italic;
+	line-height: 4.29;
+	letter-spacing: 0.35px;
+	text-align: left;
+	color: #bababa;
+
+	::placeholder {
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: italic;
+		letter-spacing: 0.35px;
+		text-align: left;
+		color: #bababa;		
+	}
+
+	&__item {
+		box-sizing: border-box;
+		width: 358px;
+		border: solid 1px #ebebeb;	
+		padding: 15px 12px;	
+
+		&--name {
+			border-left-width: 3px;
+		}
+	}
+
+	&__user-info {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 32px;
+	}
+
+	&__message {
+		box-sizing: border-box;
+		width: 100%;
+		border: solid 1px #ebebeb;
+		border-radius: 2px;
+		background-color: #fafafa;
+		padding: 12px 12px;
+	}
+}
+
+.values {
+	margin-bottom: 60px;
+
+	&__item {
+		width: 354px;
 	}
 }
